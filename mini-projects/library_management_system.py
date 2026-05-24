@@ -1,7 +1,8 @@
 library = {
     "Python Basics": "Available",
     "AI for Beginners": "Available",
-    "Data Science 101": "Available"
+    "Data Science 101": "Available",
+    "Atomic habits": "Available"
 }
 
 borrowed_books = []
@@ -56,7 +57,22 @@ while True:
 
     elif choice == "4":
 
-        print("Exiting Library System ")
+        print("\n========== Final Library Status ==========")
+
+        print("\nAvailable Books:")
+        for book,status in library.items():
+            print(f"{book} --> {status}")
+
+        print("\nBorrowed Books:")
+
+        if borrowed_books:
+            for book in borrowed_books:
+                print(f"- {book}")
+
+        else:
+            print("No books borrowed")
+
+        print("Thank you for using the Library Management System")
         break
 
     else:
