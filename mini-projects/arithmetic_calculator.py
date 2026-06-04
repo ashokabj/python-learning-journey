@@ -1,5 +1,3 @@
-'''print("Artificial intelligence and data science.")
-print("E sala cup namdu.")'''
 a=int(input("Enter the value of a:"))
 b=int(input("Enter the value of b:"))
 print("a+b=",a+b)
