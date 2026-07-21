@@ -1,8 +1,8 @@
-def transform_numbers(numbers, operations):
+def transform_numbers(numbers, operation):
     result = []
     
     for number in numbers:
-        result.append(number)
+        result.append(operation(number))
 
     return result
 
@@ -13,7 +13,7 @@ multiplaid = transform_numbers(numbers, lambda x: x*10)
 added = transform_numbers(numbers, lambda x: x+5)
 
 print(f"Original list: {numbers}")
-print(f"squared: {squared}")
-print(f"Multiplaid: {multiplaid}")
-print(f"added: {added}")
+print(f"squared      : {squared}")
+print(f"Multiplaid   : {multiplaid}")
+print(f"added        : {added}")
 
