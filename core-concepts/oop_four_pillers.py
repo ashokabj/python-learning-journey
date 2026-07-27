@@ -1,20 +1,20 @@
 from abc import ABC, abstractmethod
 
-# Abstraction
+# Abstraction : Hides implementation details and exposes only essential features.
 class Vehicle(ABC):
     @abstractmethod
     def start(self):
         pass
 
 
-# Inheritance
+# Inheritance : Allows one class to inherit properties and methods from another.
 class Car(Vehicle):
     def __init__(self, brand, speed):
         self.brand = brand
         self.__speed = speed # Encapsulation
 
 
-    # Encapsulation
+    # Encapsulation : Protects data by restricting direct access.
     def set_speed(self, speed):
         if speed >= 0:
             self.__speed = speed
@@ -22,7 +22,7 @@ class Car(Vehicle):
     def get_speed(self):
         return self.__speed
 
-    # Polimorphism
+    # Polimorphism : Enables the same method to behave differently for different objects.
     def start(self):
         return f"{self.brand} car starts with a key."
 
