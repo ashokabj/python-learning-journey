@@ -1,3 +1,5 @@
+# Duck typing
+
 class Dog:
     def sound(self):
         print("Dog barks.")
